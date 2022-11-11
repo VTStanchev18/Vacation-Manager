@@ -8,29 +8,5 @@
 <div class="text-center">
     <h1 class="display-4">Users</h1>
     <button asp-action="Create" asp-controller="User">Create User</button>
-    <table class="table table-responsive table-hover">
-        <thead>
-            <th>Id</th>
-            <th>FirstName</th>
-            <th>LastName</th>
-            <th>Role</th>
-            <th>Team</th>
-        </thead>
-        <tbody>
-            @if(Model != null && Model.Any())
-            {
-                @foreach (var item in Model)
-                {
-                    <tr>
-                        <td>@user.Id</td>
-                        <td>@user.FirstName</td>
-                        <td>@user.LastName</td>
-                        <td>@user.Role</td>
-                        <td>@user.Team</td>
-
-                    </tr>
-                }
-            }
-        </tbody>
-    </table>
+    
 </div>
